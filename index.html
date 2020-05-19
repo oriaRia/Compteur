@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compteur CCISM PF-OB</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header class="page-head">
+        <h1><img src="./assets/img/avatar1.jpg" alt="Expresso Patronum" width="50" height="50"> Mon Compteur </h1>
+    </header>
+    <div class="container">
+        <div class="row m-5">
+            <div class="col" id="global">
+                <div class="setters">
+                <div class="minutes-set">
+                  <button data-setter="minutes-plus">+</button>
+                  <button data-setter="minutes-minus">-</button>
+                </div>
+                <div class="seconds-set">
+                  <button data-setter="seconds-plus">+</button>
+                  <button data-setter="seconds-minus">-</button>
+                </div>
+                </div>
+                <div class="circle">
+                <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                   <g transform="translate(110,110)">
+                      <circle r="100" class="e-c-base"/>
+                      <g transform="rotate(-90)">
+                         <circle r="100" class="e-c-progress"/>
+                         <g id="e-pointer">
+                            <circle cx="100" cy="0" r="8" class="e-c-pointer"/>
+                         </g>
+                      </g>
+                   </g>
+                </svg>
+                </div>
+                <div class="controlls">
+                <div class="display-remain-time">00:30</div>
+                <button class="play" id="pause"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    
+    </body>
+</html>
